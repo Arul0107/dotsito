@@ -1,0 +1,114 @@
+.team-section {
+  padding: 40px;
+  background-color: #010023; /* Optional background color for contrast */
+}
+
+.team-title {
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff !important;
+  margin-bottom: 20px;
+}
+
+.team-intro {
+  text-align: left;
+  font-size: 16px;
+  color: #fff7f7;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.features-container {
+  margin-top: 20px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff !important;
+  margin-bottom: 5px;
+}
+
+.feature-text {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.team-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.team-image {
+  width: 100%;
+  max-width: 500px; /* Set a max width for better responsiveness */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .team-title,
+  .team-intro {
+      text-align: center;
+  }
+
+  .features-container {
+      gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .feature-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .team-image-container {
+      margin-top: 20px;
+  }
+
+  .team-image {
+      max-width: 300px; /* Reduce size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-title {
+      font-size: 24px; /* Adjust title size for smaller screens */
+  }
+
+  .team-intro {
+      font-size: 14px;
+  }
+
+  .feature-item {
+      padding: 10px;
+  }
+
+  .feature-title {
+      font-size: 16px;
+  }
+
+  .feature-text {
+      font-size: 12px;
+  }
+
+  .team-image {
+      max-width: 250px; /* Further reduce image size for small devices */
+  }
+}

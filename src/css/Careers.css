@@ -1,0 +1,229 @@
+.careers-banner {
+  background-image: url('../assets/img/developer.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 0;
+  height: 50vh;
+  color: white;
+  text-align: left; /* Align text to the left */
+  position: relative;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  top: 15px; /* Your existing style */
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  animation: bounce 0.6s ease-out, pulse 0.8s infinite; /* Two animations */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.job-listings{
+  background-color:rgb(255, 255, 255);
+}
+.career-inner {
+  position: relative;
+  z-index: 2; /* Keeps the text above the background image */
+  max-width: 600px;
+  top: -10px;
+  left: 2px;
+  padding-left: 2rem; /* Add padding for spacing from the left edge */
+  animation: slideInLeft 1.2s ease-out; /* Animation for smooth entry */
+}
+
+
+.heading-xl {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-darken {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+  color: white;
+}
+
+.careers-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .career-inner {
+    padding-left: 1rem; /* Reduce padding for smaller screens */
+    text-align: left; /* Ensure text stays aligned left */
+  }
+  .careers-banner { 
+    justify-content: center;}
+  .heading-xl {
+    font-size: 2rem;
+  }
+  Button{
+    top:15px ;
+  }
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 3rem 0;
+}
+
+.benefits-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  background-color: #010023;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-title {
+  margin-bottom: 1.5rem;
+}
+/* Card Styles */
+.ant-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card:hover {
+  transform: translateY(-5px);
+}
+
+.ant-card-cover img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.ant-card-body {
+  padding: 15px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .ant-card {
+    margin-bottom: 20px;
+  }
+
+  .careers-banner {
+    text-align: center;
+  }
+}
+.graduate-careers {
+  padding: 50px 0;
+  background-color: #f8fafd;
+}
+
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.video-section .text-content {
+  flex: 1; /* Take up 50% of space */
+  padding-right: 20px;
+}
+
+.video-section iframe {
+  flex: 1; /* Take up 50% of space */
+}
+
+.transcript-link a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-section iframe {
+    width: 100%;
+    
+  }
+
+  .video-section .text-content {
+    padding-right: 0;
+  }
+
+  .transcript-link a {
+    margin-top: 20px;
+  }
+ 
+}
+

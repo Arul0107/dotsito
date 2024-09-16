@@ -1,0 +1,19 @@
+.about-page {
+  padding: 20px;
+}
+
+.about-banner {
+  background: #007bff;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}

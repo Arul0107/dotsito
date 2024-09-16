@@ -1,0 +1,59 @@
+
+.services-banner {
+  position: relative;
+  background-image: url('../assets/img/serivessban.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds the overlay */
+}
+
+.banner-content {
+  padding: 40px;
+  color: white;
+}
+
+.services-content {
+  padding: 40px 20px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .services-content {
+    padding: 20px 10px;
+  }
+  
+  .banner-content {
+    text-align: center;
+  }
+  
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
+.service-title{
+  color: white !important;
+}
+.service-text{
+  color: white !important;
+}

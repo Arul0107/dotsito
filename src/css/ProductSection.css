@@ -1,0 +1,127 @@
+/* Section and Grid Layout */
+.product-section {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.product-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Grid Styling */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.product-card {
+  position: relative;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  height: 100%;
+  margin: 15px;
+  width: 100%; /* Set width to 100% by default */
+  max-width: 350px; /* Limit maximum width for cards */
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Card Image Styling */
+.product-image {
+  width: 100%;
+  height: 200px; /* Set fixed height for uniformity */
+  object-fit: cover;
+  border-bottom: 5px solid #00baff;
+}
+
+/* Title and Description Font Styling */
+.product-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Read More Link Styling */
+.read-more {
+  color: #f04f23;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .product-image {
+      height: 140px; /* Reduce image height for mobile screens */
+  }
+
+  .product-card-title {
+      font-size: 1rem; /* Reduce font size for mobile */
+  }
+
+  .product-description {
+      font-size: 0.9rem; /* Slightly reduce description font size */
+  }
+
+  .read-more {
+      font-size: 0.9rem;
+  }
+
+  .product-container {
+      width: 95%; /* Increase container width for smaller screens */
+  }
+
+  .product-card {
+      width: 100%;
+      margin: 10px; /* Reduce margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-image {
+      height: 120px;
+  }
+
+  .product-card-title {
+      font-size: 0.95rem; /* Further reduce font size on very small screens */
+  }
+
+  .product-description {
+      font-size: 0.85rem; /* Further reduce description font size */
+  }
+
+  .read-more {
+      font-size: 0.85rem;
+  }
+
+  .product-container {
+      width: 100%;
+  }
+
+  .product-card {
+      max-width: 100%; /* Ensure the card takes full width on small screens */
+      margin: 5px 0; /* Further reduce margin for smaller screens */
+  }
+}
